@@ -5,92 +5,216 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beyond the Medal: Women in the Olympics</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+            opacity: 0;
+        }
+    </style>
 </head>
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
     <div class="container mx-auto px-4 py-12">
         <header class="text-center mb-12">
-            <h1 class="text-4xl font-bold text-blue-900 mb-4">Beyond the Medal: The Economical, Social and Cultural Impact of Women in the Olympics</h1>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                A Comprehensive Research Study on Gender Equality in Olympic Sports
-            </p>
+            <div class="relative mb-8">
+                <img src="/api/placeholder/1200/400" alt="Olympic Women Athletes" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                    <h1 class="text-5xl font-bold text-white text-center px-4">
+                        Beyond the Medal: The Economic, Social and Cultural Impact of Women in the Olympics
+                    </h1>
+                </div>
+            </div>
+            
+            <h2 class="text-4xl font-semibold text-purple-800 mb-6 animate-fade-in">Her Game, Her Story</h2>
         </header>
 
-        <section class="grid md:grid-cols-2 gap-8 items-center mb-12">
-            <div>
-                <h2 class="text-3xl font-semibold text-blue-800 mb-6">Research Introduction</h2>
-                <div class="space-y-4 text-gray-700">
-                    <p>
-                        Women's Olympic journeys have been defined by decades of struggle, marginalization, and, ultimately, empowerment. Female athletes' involvement in the Olympic Games has been historically influenced by broader socioeconomic factors such as economic growth, political systems, and cultural perspectives on gender equality.
-                    </p>
-                    <p>
-                        This research aims to provide critical insights into the complex landscape of gender representation in international sports, exploring the multifaceted factors that shape female athletes' participation in the Olympic Games.
-                    </p>
-                </div>
-            </div>
-            <div class="grid grid-cols-2 gap-4">
-                <img src="/api/placeholder/300/200" alt="Female Olympic Athletes" class="w-full h-48 object-cover rounded-lg shadow-md">
-                <img src="/api/placeholder/300/200" alt="Olympic Venue" class="w-full h-48 object-cover rounded-lg shadow-md">
-                <img src="/api/placeholder/300/200" alt="Athletes Training" class="w-full h-48 object-cover rounded-lg shadow-md">
-                <img src="/api/placeholder/300/200" alt="Olympic Medals" class="w-full h-48 object-cover rounded-lg shadow-md">
-            </div>
-        </section>
+        <nav class="mb-12 flex justify-center space-x-4">
+            <a href="research-question-1.html" class="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700">
+                Research Question 1
+            </a>
+            <a href="research-question-2.html" class="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700">
+                Research Question 2
+            </a>
+            <a href="research-question-3.html" class="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700">
+                Research Question 3
+            </a>
+        </nav>
 
-        <section class="bg-white p-8 rounded-lg shadow-md mb-12">
-            <h2 class="text-3xl font-semibold text-blue-800 mb-6 text-center">Research Questions</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div>
-                    <h3 class="text-xl font-semibold text-blue-700 mb-4">Political and Economic Determinants</h3>
-                    <p class="text-gray-700">
-                        Investigate the influence of the Democracy Index, Gender Inequality Index (GII), and GDP per capita on female athlete representation in the Paris 2024 Olympics.
-                    </p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-blue-700 mb-4">Gender Equity in Sports</h3>
-                    <p class="text-gray-700">
-                        Examine the correlation between gender equity in sports participation across Olympic disciplines and the Gender Inequality Index of participating nations.
-                    </p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-blue-700 mb-4">Economic Progress and Representation</h3>
-                    <p class="text-gray-700">
-                        Analyze the patterns in female athlete representation over time and their relationship to nations' economic growth as measured by GDP.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-blue-50 p-8 rounded-lg shadow-md">
-            <h2 class="text-3xl font-semibold text-blue-800 mb-6 text-center">Research Objectives</h2>
-            <div class="max-w-3xl mx-auto text-gray-700 space-y-4">
+        <section class="bg-white p-8 rounded-lg shadow-md animate-fade-in">
+            <h3 class="text-2xl font-semibold text-purple-800 mb-6">Research Introduction</h3>
+            <div class="text-gray-700 space-y-4">
                 <p>
-                    The primary objectives of this research are to:
+                    Women's Olympic journeys have been made a distinction by decades of struggle, marginalization, and, finally, empowerment. Female athletes' involvement in the Olympic Games has historically been influenced by wider socioeconomic issues such as economic growth, political systems, and cultural views toward gender equality.
                 </p>
-                <ul class="list-disc list-inside pl-4">
-                    <li>Elucidate how societal constructs dictate opportunities for women in sports</li>
-                    <li>Identify which Olympic sports demonstrate greater gender inclusivity</li>
-                    <li>Understand the relationship between economic growth and female athlete representation</li>
-                    <li>Provide insights into the ongoing struggle for gender equality in global sports</li>
+                <p>
+                    Understanding the factors influencing female athlete engagement is critical to fostering gender equality in sports. This research will examine three interrelated questions:
+                </p>
+                <ul class="list-disc list-inside pl-4 text-purple-900">
+                    <li>The influence of political and economic determinants on female athlete representation</li>
+                    <li>Correlation between gender equity in sports participation and national gender inequality</li>
+                    <li>Patterns of female athlete representation in relation to economic progress</li>
                 </ul>
                 <p>
-                    By examining these critical aspects, the research aims to contribute to a deeper understanding of the social, economic, and cultural factors that shape women's participation in the Olympic Games.
+                    Through a thorough examination of these variables, the investigation aspires to elucidate the manner in which societal constructs dictate the opportunities afforded to women in the realm of sports.
                 </p>
             </div>
-        </section>
-
-        <section class="mt-12 text-center">
-            <h2 class="text-3xl font-semibold mb-6">Research Significance</h2>
-            <p class="mb-6 text-gray-700 max-w-2xl mx-auto">
-                This study offers a comprehensive analysis of gender representation in Olympic sports, 
-                providing valuable insights into the complex interplay of economic, social, and cultural 
-                factors that influence female athletes' opportunities and achievements.
-            </p>
-            <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 inline-block">
-                Download Full Research Proposal
-            </a>
         </section>
     </div>
 
-    <footer class="bg-gray-800 text-white py-6 text-center mt-12">
+    <footer class="bg-purple-900 text-white py-6 text-center mt-12">
+        <p>&copy; 2024 Beyond the Medal Research Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Question 1 | Beyond the Medal</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <div class="container mx-auto px-4 py-12">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-purple-900 mb-4">Research Question 1</h1>
+            <p class="text-xl text-purple-700">Political and Economic Determinants of Female Athlete Representation</p>
+        </header>
+
+        <nav class="mb-12 flex justify-center space-x-4">
+            <a href="index.html" class="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700">
+                Home
+            </a>
+            <a href="research-question-2.html" class="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700">
+                Next Question
+            </a>
+        </nav>
+
+        <section class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-3xl font-semibold text-purple-800 mb-6">Research Focus</h2>
+            <div class="text-gray-700 space-y-4">
+                <p>
+                    This research will investigate the influence of political and economic determinants—specifically the Democracy Index, Gender Inequality Index (GII), and GDP per capita—on the representation of female athletes in the upcoming Paris 2024 Olympics.
+                </p>
+                <p>
+                    Through a thorough examination of these variables, the investigation aspires to elucidate the manner in which societal constructs dictate the opportunities afforded to women in the realm of sports.
+                </p>
+                <h3 class="text-2xl font-semibold text-purple-700 mt-6">Key Variables</h3>
+                <ul class="list-disc list-inside pl-4 text-purple-900">
+                    <li>Democracy Index</li>
+                    <li>Gender Inequality Index (GII)</li>
+                    <li>GDP per capita</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-purple-900 text-white py-6 text-center mt-12">
+        <p>&copy; 2024 Beyond the Medal Research Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Question 2 | Beyond the Medal</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <div class="container mx-auto px-4 py-12">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-purple-900 mb-4">Research Question 2</h1>
+            <p class="text-xl text-purple-700">Gender Equity in Sports Participation</p>
+        </header>
+
+        <nav class="mb-12 flex justify-center space-x-4">
+            <a href="index.html" class="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700">
+                Home
+            </a>
+            <a href="research-question-1.html" class="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700">
+                Previous Question
+            </a>
+            <a href="research-question-3.html" class="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700">
+                Next Question
+            </a>
+        </nav>
+
+        <section class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-3xl font-semibold text-purple-800 mb-6">Research Focus</h2>
+            <div class="text-gray-700 space-y-4">
+                <p>
+                    This study will examine the correlation between gender equity in sports participation across various Olympic disciplines and the Gender Inequality Index (GII) of the respective nations.
+                </p>
+                <p>
+                    The aim is to ascertain which sports demonstrate greater inclusivity and whether societal gender equality corresponds to enhanced participation equity in athletic endeavors.
+                </p>
+                <h3 class="text-2xl font-semibold text-purple-700 mt-6">Research Objectives</h3>
+                <ul class="list-disc list-inside pl-4 text-purple-900">
+                    <li>Analyze gender participation across Olympic sports</li>
+                    <li>Correlate participation with national Gender Inequality Index</li>
+                    <li>Identify most inclusive Olympic disciplines</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-purple-900 text-white py-6 text-center mt-12">
+        <p>&copy; 2024 Beyond the Medal Research Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Question 3 | Beyond the Medal</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <div class="container mx-auto px-4 py-12">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-purple-900 mb-4">Research Question 3</h1>
+            <p class="text-xl text-purple-700">Economic Progress and Female Athlete Representation</p>
+        </header>
+
+        <nav class="mb-12 flex justify-center space-x-4">
+            <a href="index.html" class="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700">
+                Home
+            </a>
+            <a href="research-question-2.html" class="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700">
+                Previous Question
+            </a>
+        </nav>
+
+        <section class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-3xl font-semibold text-purple-800 mb-6">Research Focus</h2>
+            <div class="text-gray-700 space-y-4">
+                <p>
+                    This study will examine the patterns in the number of female athletes sent to the Olympics throughout time and how these changes correspond to the nations' economic progress, as defined by GDP.
+                </p>
+                <p>
+                    The purpose is to determine how economic growth affects the progress of female athlete representation and if nations with greater GDP are more effective in achieving gender equality in sport.
+                </p>
+                <h3 class="text-2xl font-semibold text-purple-700 mt-6">Key Investigative Areas</h3>
+                <ul class="list-disc list-inside pl-4 text-purple-900">
+                    <li>Temporal trends in female athlete representation</li>
+                    <li>Correlation between GDP and female athlete participation</li>
+                    <li>Economic factors influencing gender equality in sports</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-purple-900 text-white py-6 text-center mt-12">
         <p>&copy; 2024 Beyond the Medal Research Project. All rights reserved.</p>
     </footer>
 </body>
