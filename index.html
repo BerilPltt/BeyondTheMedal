@@ -1,58 +1,81 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benim Web Sitem</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        h1 {
-            color: #333;
-        }
-    </style>
+    <title>My Project Website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <nav class="bg-blue-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold">Project Name</a>
+            <div class="space-x-4">
+                <a href="#about" class="text-white hover:text-blue-200">About</a>
+                <a href="#features" class="text-white hover:text-blue-200">Features</a>
+                <a href="#contact" class="text-white hover:text-blue-200">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-    <header>
-        <h1>Hoş Geldiniz!</h1>
+    <header class="bg-blue-500 text-white text-center py-20">
+        <h1 class="text-4xl font-bold mb-4">Welcome to My Project</h1>
+        <p class="text-xl mb-8">A brief description of what makes your project awesome</p>
+        <a href="#" class="bg-white text-blue-600 px-6 py-3 rounded-full hover:bg-blue-100">Learn More</a>
     </header>
 
-    <section>
-        <h2>Hakkında</h2>
-        <p>Bu, Visual Studio Code ile yazılmış basit bir HTML örneğidir. Web sitenizde yer alacak temel içerik burada bulunuyor.</p>
-        <ul>
-            <li>HTML ile yapı oluşturmak</li>
-            <li>CSS ile stil eklemek</li>
-            <li>JavaScript ile dinamik özellikler eklemek</li>
-        </ul>
-    </section>
+    <main class="container mx-auto px-4 py-12">
+        <section id="about" class="mb-12">
+            <h2 class="text-3xl font-semibold text-center mb-8">About the Project</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <p class="text-gray-700">
+                        Describe your project in detail. What problem does it solve? 
+                        What makes it unique? Share your project's story and vision.
+                    </p>
+                </div>
+                <div>
+                    <img src="/api/placeholder/500/300" alt="Project Illustration" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </section>
 
-    <footer>
-        <p>© 2024 Benim Web Sitem. Tüm hakları saklıdır.</p>
+        <section id="features" class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-3xl font-semibold text-center mb-8">Key Features</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-center">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🚀</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Feature 1</h3>
+                    <p class="text-gray-600">Describe the first key feature of your project.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">💡</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Feature 2</h3>
+                    <p class="text-gray-600">Describe the second key feature of your project.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🛠️</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Feature 3</h3>
+                    <p class="text-gray-600">Describe the third key feature of your project.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mt-12 text-center">
+            <h2 class="text-3xl font-semibold mb-8">Get in Touch</h2>
+            <p class="mb-6 text-gray-700">Have questions or want to collaborate? Reach out to us!</p>
+            <a href="mailto:your-email@example.com" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">Contact Us</a>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 text-center">
+        <p>&copy; 2024 Your Project Name. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
