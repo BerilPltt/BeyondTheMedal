@@ -3,73 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Political and Economic Determinants of Female Athlete Representation | Beyond the Medal</title>
+    <title>Beyond the Medal: Women in the Olympics</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+            opacity: 0;
+        }
+    </style>
 </head>
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
-    <nav class="bg-purple-800 text-white py-4">
-        <div class="container mx-auto px-4 flex justify-center space-x-8">
-            <a href="index.html" class="hover:text-purple-200 transition duration-300">Home</a>
-            <span class="text-purple-300">|</span>
-            <a href="research-question-1.html" class="hover:text-purple-200 transition duration-300">Descriptive Visualizations</a>
-            <span class="text-purple-300">|</span>
-            <a href="research-question-2.html" class="hover:text-purple-200 transition duration-300">Model-Based Visualizations</a>
-        </div>
-    </nav>
-    <div class="container mx-auto px-4 py-12"> 
+    <div class="container mx-auto px-4 py-12">
         <header class="text-center mb-12">
-             <h1 class="text-4xl font-bold text-purple-900 mb-4">Political and Economic Determinants of Female Athlete Representation</h1>
+            <div class="relative mb-8">
+                <img src="/api/placeholder/1200/400" alt="Olympic Women Athletes" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                    <h1 class="text-5xl font-bold text-white text-center px-4">
+                        Beyond the Medal: The Economic, Social and Cultural Impact of Women in the Olympics
+                    </h1>
+                </div>
+            </div>
+
+            <h2 class="text-4xl font-semibold text-purple-800 mb-6 animate-fade-in">Her Game, Her Story</h2>
         </header>
-        <section class="bg-white p-8 rounded-lg shadow-md">
-            <h2 class="text-3xl font-semibold text-purple-800 mb-6">Research Focus</h2>
+        <nav class="mb-12 flex justify-center space-x-4">
+            <a href="research-question-1.html" class="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700">
+                Research Question 1
+            </a>
+            <a href="research-question-2.html" class="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700">
+                Research Question 2
+            </a>
+            <a href="research-question-3.html" class="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700">
+                Research Question 3
+            </a>
+        </nav>
+        <section class="bg-white p-8 rounded-lg shadow-md animate-fade-in">
+            <h3 class="text-2xl font-semibold text-purple-800 mb-6">Research Introduction</h3>
             <div class="text-gray-700 space-y-4">
                 <p>
-                    This research will investigate the influence of political and economic determinants—specifically the Democracy Index, Gender Inequality Index (GII), and GDP per capita—on the representation of female athletes in the upcoming Paris 2024 Olympics.
+                    Women's Olympic journeys have been made a distinction by decades of struggle, marginalization, and, finally, empowerment. Female athletes' involvement in the Olympic Games has historically been influenced by wider socioeconomic issues such as economic growth, political systems, and cultural views toward gender equality.
                 </p>
+                <p>
+                    Understanding the factors influencing female athlete engagement is critical to fostering gender equality in sports. This research will examine three interrelated questions:
+                </p>
+                <ul class="list-disc list-inside pl-4 text-purple-900">
+                    <li>The influence of political and economic determinants on female athlete representation</li>
+                    <li>Correlation between gender equity in sports participation and national gender inequality</li>
+                    <li>Patterns of female athlete representation in relation to economic progress</li>
+                </ul>
                 <p>
                     Through a thorough examination of these variables, the investigation aspires to elucidate the manner in which societal constructs dictate the opportunities afforded to women in the realm of sports.
                 </p>
-                <h3 class="text-2xl font-semibold text-purple-700 mt-6">Key Variables</h3>
-                <ul class="list-disc list-inside pl-4 text-purple-900">
-                    <li>Democracy Index</li>
-                    <li>Gender Inequality Index (GII)</li>
-                    <li>GDP per capita</li>
-                </ul>
-
-                <div class="space-y-6 mt-8">
-                    <!-- Democracy Index Visualization -->
-                    <div class="bg-gray-50 p-6 rounded-lg max-w-3xl mx-auto">
-                        <h4 class="text-xl font-semibold text-purple-800 mb-3">Democracy Index Distribution</h4>
-                        <img src="https://raw.githubusercontent.com/BerilPltt/BeyondTheMedal/refs/heads/main/gender_distribution_across_allsportsbranch.png" alt="gender_distribution_across_allsportsbranch" class="w-full mb-4">
-                        <p class="text-sm text-gray-600">Histogram showing the distribution of Democracy Index scores across participating countries.</p>
-                    </div>
-
-                    <!-- GII Visualization -->
-                    <div class="bg-gray-50 p-6 rounded-lg max-w-3xl mx-auto">
-                        <h4 class="text-xl font-semibold text-purple-800 mb-3">Gender Inequality Index Trends</h4>
-                        <img src="https://raw.githubusercontent.com/BerilPltt/BeyondTheMedal/refs/heads/main/gender_distribution_in_sports%20(1).png" alt="gender_distribution_in_sport" class="w-full mb-4">
-                        <p class="text-sm text-gray-600">Line plot showing Gender Inequality Index trends over the past decade.</p>
-                    </div>
-
-                    <!-- GDP Visualization -->
-                    <div class="bg-gray-50 p-6 rounded-lg max-w-3xl mx-auto">
-                        <h4 class="text-xl font-semibold text-purple-800 mb-3">GDP per Capita Analysis</h4>
-                        <img src="https://raw.githubusercontent.com/BerilPltt/BeyondTheMedal/refs/heads/main/gender_distribution_accross_sports.png" alt="gender_distribution_accross_sports" class="w-full mb-4">
-                        <p class="text-sm text-gray-600">Scatter plot comparing GDP per capita with female athlete participation rates.</p>
-                    </div>
-
-                    <!-- Interactive Dashboard -->
-                    <div class="bg-gray-50 p-6 rounded-lg max-w-3xl mx-auto">
-                        <h4 class="text-xl font-semibold text-purple-800 mb-3">Interactive Data Dashboard</h4>
-                        <iframe src="gender_ratio_distrb_bysport_eachcountry.html" class="w-full h-screen border-0"></iframe>
-                        <p class="text-sm text-gray-600">Interactive dashboard for exploring relationships between variables.</p>
-                    </div>
-                </div>
             </div>
         </section>
     </div>
     <footer class="bg-purple-900 text-white py-6 text-center mt-12">
-        <p>&copy; 2024 IE 421 - Beyond the Medal Research Project. All rights reserved.</p>
+        <p>&copy; 2024 Beyond the Medal Research Project. All rights reserved.</p>
     </footer>
 </body>
-</html>
+</html>" 
