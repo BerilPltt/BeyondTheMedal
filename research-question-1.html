@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Political and Economic Determinants of Female Athlete Representation | Beyond the Medal</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .dashboard-frame {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+    </style>
 </head>
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
     <nav class="bg-purple-800 text-white py-4">
@@ -23,12 +30,8 @@
         <section class="bg-white p-8 rounded-lg shadow-md">
             <h2 class="text-3xl font-semibold text-purple-800 mb-6">Research Focus</h2>
             <div class="text-gray-700 space-y-4">
-                <p>
-                    This research will investigate the influence of political and economic determinants—specifically the Democracy Index, Gender Inequality Index (GII), and GDP per capita—on the representation of female athletes in the upcoming Paris 2024 Olympics.
-                </p>
-                <p>
-                    Through a thorough examination of these variables, the investigation aspires to elucidate the manner in which societal constructs dictate the opportunities afforded to women in the realm of sports.
-                </p>
+                <p>This research will investigate the influence of political and economic determinants—specifically the Democracy Index, Gender Inequality Index (GII), and GDP per capita—on the representation of female athletes in the upcoming Paris 2024 Olympics.</p>
+                <p>Through a thorough examination of these variables, the investigation aspires to elucidate the manner in which societal constructs dictate the opportunities afforded to women in the realm of sports.</p>
                 <h3 class="text-2xl font-semibold text-purple-700 mt-6">Key Variables</h3>
                 <ul class="list-disc list-inside pl-4 text-purple-900">
                     <li>Democracy Index</li>
@@ -37,31 +40,27 @@
                 </ul>
 
                 <div class="space-y-6 mt-8">
-                    <!-- Democracy Index Visualization -->
                     <div class="bg-gray-50 p-6 rounded-lg max-w-3xl mx-auto">
                         <h4 class="text-xl font-semibold text-purple-800 mb-3">Democracy Index Distribution</h4>
-                        <img src="https://raw.githubusercontent.com/BerilPltt/BeyondTheMedal/refs/heads/main/gender_distribution_across_allsportsbranch.png" alt="gender_distribution_across_allsportsbranch" class="w-full mb-4">
+                        <img src="/api/placeholder/800/400" alt="Gender distribution across all sports branches" class="w-full mb-4">
                         <p class="text-sm text-gray-600">Histogram showing the distribution of Democracy Index scores across participating countries.</p>
                     </div>
 
-                    <!-- GII Visualization -->
                     <div class="bg-gray-50 p-6 rounded-lg max-w-3xl mx-auto">
                         <h4 class="text-xl font-semibold text-purple-800 mb-3">Gender Inequality Index Trends</h4>
-                        <img src="https://raw.githubusercontent.com/BerilPltt/BeyondTheMedal/refs/heads/main/gender_distribution_in_sports%20(1).png" alt="gender_distribution_in_sport" class="w-full mb-4">
+                        <img src="/api/placeholder/800/400" alt="Gender distribution in sports" class="w-full mb-4">
                         <p class="text-sm text-gray-600">Line plot showing Gender Inequality Index trends over the past decade.</p>
                     </div>
 
-                    <!-- GDP Visualization -->
                     <div class="bg-gray-50 p-6 rounded-lg max-w-3xl mx-auto">
                         <h4 class="text-xl font-semibold text-purple-800 mb-3">GDP per Capita Analysis</h4>
-                        <img src="https://raw.githubusercontent.com/BerilPltt/BeyondTheMedal/refs/heads/main/gender_distribution_accross_sports.png" alt="gender_distribution_accross_sports" class="w-full mb-4">
+                        <img src="/api/placeholder/800/400" alt="Gender distribution across sports" class="w-full mb-4">
                         <p class="text-sm text-gray-600">Scatter plot comparing GDP per capita with female athlete participation rates.</p>
                     </div>
 
-                    <!-- Interactive Dashboard -->
                     <div class="bg-gray-50 p-6 rounded-lg max-w-3xl mx-auto">
                         <h4 class="text-xl font-semibold text-purple-800 mb-3">Interactive Data Dashboard</h4>
-                        <iframe src="gender_ratio_distrb_bysport_eachcountry.html" class="w-full h-screen border-0"></iframe>
+                        <iframe src="gender_ratio_distrb_bysport_eachcountry.html" class="dashboard-frame"></iframe>
                         <p class="text-sm text-gray-600">Interactive dashboard for exploring relationships between variables.</p>
                     </div>
                 </div>
